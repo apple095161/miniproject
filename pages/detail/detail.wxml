@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<navigation-bar title="Weixin" back="{{true}}" homeButton="{{true}}" color="black" 
+background="#FFF">
+</navigation-bar>
+<text>pages/detail/detail.wxml</text>

@@ -1,0 +1,12 @@
+<!-- index.wxml-->
+<View class="topview">123</View>
+
+<navigator url="/pages/detail/detail">
+  <view class='p active'>例子1: 点击跳转搜索页</view>
+</navigator>
+<!-- <scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    Weixin
+    <item></item>
+  </view>
+</scroll-view> -->

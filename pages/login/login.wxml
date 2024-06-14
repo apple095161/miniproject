@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<!-- <navigation-bar title="Weixin" back="{{true}}" homeButton="{{true}}" color="black" 
+background="#FFF"></navigation-bar> -->
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <button type="primary" plain="true" bind:tap="click">按钮</button>
+  <view class="container">
+    {{title}}
+  </view>
+</scroll-view>
