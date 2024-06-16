@@ -1,12 +1,48 @@
-<!-- index.wxml-->
-<View class="topview">123</View>
+<!-- index.wxml-->.
+<scroll-view scroll-y="true" style="height: 100vh">
+  <View class="topview">
+    <View class="topTitle">
+      <image style="width: 50px; height: 50px;" src="/images/123.jpeg" class="topImg"></image>
+      <View class="top-descript">
+        <View class="top-login">
+          <View class="top-login-desc">立即登入，搶優惠</View>
+          <View class="top-login-btn" bind:tap="login">去登入</View>
+        </View>
+        <View class="sub-desc">加入會員,開卡送好禮</View>
+      </View>
+    </View>
 
-<navigator url="/pages/detail/detail">
-  <view class='p active'>例子1: 点击跳转搜索页</view>
-</navigator>
-<!-- <scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Weixin
-    <item></item>
-  </view>
-</scroll-view> -->
+    <scroll-view scroll-x="true" bindscroll="scroll" class="scroll-area" :show-scrollbar="true">
+      <View class="main-area">
+        <View class="items">
+          <image class="items-image" src="/images/main1.png" />
+          <View class="items-text">寵物保險</View>
+        </View>
+        <View class="items">
+          <image class="items-image" src="/images/main2.png" />
+          <View class="items-text">預約美容</View>
+        </View>
+        <View class="items">
+          <image class="items-image" src="/images/1.png" />
+          <View class="items-text">寵物保險</View>
+        </View>
+        <View class="items">
+          <image class="items-image" src="/images/main1.png" />
+          <View>預約掛號</View>
+        </View>
+      </View>
+    </scroll-view>
+    <project bind:click="onMyEvent"></project>
+  </View>
+</scroll-view>
+<View class="popupView" wx:if="{{ popupView }}">
+  <View class="content-wrap">
+    <view class="content">
+      <image class="close-img" src="/images/times.png" bind:tap="close" />
+      <image class="content-img" src="{{modalImg}}" mode="center" />
+      <View class="content-text">
+        {{modalText}}
+      </View>
+    </view>
+  </View>
+</View>

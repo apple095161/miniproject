@@ -4,8 +4,83 @@ page {
   display: flex;
   flex-direction: column;
 }
+
 .scrollarea {
   flex: 1;
   overflow-y: hidden;
   margin-top: 50px;
+}
+
+.sign-wrap {
+  padding: 0px 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+form-area {
+  padding: 0px 15px;
+}
+
+.form-group {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin-top: 15px;
+}
+
+.form-label {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.form-image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.form-input {
+  padding: 10px;
+  padding-left: 30px;
+}
+.form-input2{
+  padding: 10px 0px;
+}
+
+.form-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.action {
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-between;
+}
+
+.forget {
+  font-size: 14px;
+  color: rgb(175, 159, 159);
+}
+.switchBtn{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.switchBtn-title{
+  color: rgb(175, 159, 159);
+  margin-right: 5px;
+}
+.changeType{
+  color:cadetblue;
+}
+
+.login-button {
+  width: 100%;
+  background-color:cornflowerblue;
 }

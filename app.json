@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/login/login",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/mypage/mypage"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -22,13 +23,13 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首頁1",
+        "text": "首頁",
         "iconPath": "images/1.png",
         "selectedIconPath": "images/1.png"
       },
       {
-        "pagePath": "pages/login/login",
-        "text": "商品頁面2",
+        "pagePath": "pages/mypage/mypage",
+        "text": "我的",
         "iconPath": "images/1.png",
         "selectedIconPath": "images/1.png"
       }

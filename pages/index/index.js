@@ -3,13 +3,35 @@ Page({
   data: {
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
+    show: false,
+    popupView: false,
+    modalImg: '',
+    modalText: ''
   },
-  onLoad() {
+  onLoad() {},
+  onMyEvent(e) {
+    console.log(e.detail.url)
     this.setData({
-      nbTitle: '新标题',
-      nbLoading: true,
-      nbFrontColor: '#ffffff',
-      nbBackgroundColor: '#000000',
+      modalImg: e.detail.url,
+      modalText: e.detail.text,
+      popupView:true
+    });
+  },
+  close() {
+    this.setData({
+      popupView: false
+    })
+  },
+  login() {
+    wx.navigateTo({
+      url: '/pages/login/login',
+      events: () => {
+        console.log('123')
+      },
+      routeType: 'routeType',
+      success: (result) => {},
+      fail: (res) => {},
+      complete: (res) => {},
     })
   }
 })

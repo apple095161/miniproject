@@ -1,10 +1,10 @@
-<View>
-  items
-  <view class="page-section-spacing">
-    <view class="flex-wrp" style="flex-direction:row;">
-      <view class="flex-item demo-text-1">1</view>
-      <view class="flex-item demo-text-2">2</view>
-      <view class="flex-item demo-text-3">3</view>
+<View class="product-wrap">
+    <view class="product-items" wx:for="{{List}}" wx:for-item="item" bind:tap="clickItem" data-value="{{item}}" wx:key="text">
+      <View>
+        <image class="product-items-img" src="{{item.url}}" mode="cover" />
+      </View>
+      <View class="product-items-text">
+        {{item.text}}
+      </View>
     </view>
-  </view>
-</View>
+  </View>

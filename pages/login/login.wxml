@@ -1,10 +1,66 @@
 <!--index.wxml-->
-<!-- <navigation-bar title="Weixin" back="{{true}}" homeButton="{{true}}" color="black" 
-background="#FFF"></navigation-bar> -->
+<navigation-bar title="{{title}}" back="{{true}}" homeButton="{{true}}" color="black" background="#FFF"></navigation-bar>
+<View class="sign-wrap" wx:if="{{ type==='login' }}">
+  <View class="title">Login</View>
+  <View class="form-area">
+    <View class="form-group">
+      <label for="" class="form-label">UserName</label>
+      <View class="form-input-wrap">
+        <image class="form-image" src="/images/1.png" />
+        <input type="text" model:value="{{username}}" placeholder="Username" class="form-input" />
+      </View>
+    </View>
+    <View class="form-group">
+      <label for="" class="form-label">Password</label>
+      <View class="form-input-wrap">
+        <image class="form-image" src="/images/1.png" />
+        <input type="text" model:value="{{username}}" placeholder="Password" class="form-input" />
+      </View>
+    </View>
+    <View class="action">
+      <View class="forget">忘記密碼?</View>
+      <View class="switchBtn">
+        <View class="switchBtn-title">沒有帳號?</View>
+        <View class="changeType" bind:tap="changeType">去註冊</View>
+      </View>
+    </View>
+    <button style="width: 100%;" class="login-button">登入</button>
+  </View>
+</View>
 
+<View class="sign-wrap" wx:else>
+  <View class="title">Register</View>
+  <View class="form-area">
+    <View class="form-group">
+      <label for="" class="form-label">帳號</label>
+      <View class="form-input-wrap">
+        <input type="text" model:value="{{username}}" placeholder="請輸入帳號" class="form-input2" />
+      </View>
+    </View>
+    <View class="form-group">
+      <label for="" class="form-label">電子郵件</label>
+      <View class="form-input-wrap">
+        <input type="email" model:value="{{username}}" placeholder="請輸入電子郵件" class="form-input2" />
+      </View>
+    </View>
+    <View class="form-group">
+      <label for="" class="form-label">密碼</label>
+      <View class="form-input-wrap">
+        <input type="number" model:value="{{username}}" placeholder="請輸入密碼" class="form-input2" />
+      </View>
+    </View>
+    <View class="action">
+      <View class="switchBtn">
+        <View class="switchBtn-title">已有帳號?</View>
+        <View class="changeType" bind:tap="changeType">去登入</View>
+      </View>
+    </View>
+    <button style="width: 100%;" class="login-button">註冊</button>
+  </View>
+</View>
+<!-- 
 <scroll-view class="scrollarea" scroll-y type="list">
-  <button type="primary" plain="true" bind:tap="click">按钮</button>
   <view class="container">
     {{title}}
   </view>
-</scroll-view>
+</scroll-view> -->

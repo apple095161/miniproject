@@ -24,7 +24,7 @@ Component({
     },
     back: {
       type: Boolean,
-      value: true
+      value: false
     },
     loading: {
       type: Boolean,

@@ -1,0 +1,88 @@
+<navigation-bar title="個人中心" back="{{false}}" homeButton="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="myPage">
+  <view class="title-desc">
+    <image class="title-img" src="/images/1.png" alt="" />
+    <view class="title-text">登入查看會員權限</view>
+  </view>
+  <view class="main-action">
+    <view class="main-1">
+      <view class="action">
+        <image src="/images/star.png" style="width: 20px;height: 20px;margin-right: 5px;" />
+        <view>商品收藏</view>
+      </view>
+      <view class="action">
+        <image src="/images/bag.png" style="width: 20px;height: 20px;margin-right: 5px;" />
+        <view>我的足跡</view>
+      </view>
+    </view>
+    <view class="main-1">
+      <view class="action-2">
+        <image class="action-icon" src="/images/bag.png" />
+        <view class="action-text">商品訂單</view>
+      </view>
+      <view class="action-2">
+        <image class="action-icon" src="/images/card2.png" />
+        <view class="action-text">服務/卡訂單</view>
+      </view>
+      <view class="action-2">
+        <image class="action-icon" src="/images/card.png" />
+        <view class="action-text">同城訂單</view>
+      </view>
+      <view class="action-2">
+        <image class="action-icon" src="/images/cash.png" />
+        <view class="action-text">全部訂單</view>
+      </view>
+    </view>
+  </view>
+  <view class="myproperty">
+    <view class="property-top">
+      <view class="top-area">
+        <view class="top-title">我的資產</view>
+        <view class="top-action">
+          全部
+          <image src="/images/right-arrow.png" style="margin-left:5px;width: 14px;height: 14px;" />
+        </view>
+      </view>
+      <view class="property-list">
+        <view class="property-item">
+          <view class="property-item-number">0</view>
+          <view class="property-item-text">積分</view>
+        </view>
+        <view class="property-item">
+          <view class="property-item-number">0</view>
+          <view class="property-item-text">儲值</view>
+        </view>
+        <view class="property-item">
+          <view class="property-item-number">0</view>
+          <view class="property-item-text">優惠卷</view>
+        </view>
+        <view class="property-item">
+          <view class="property-item-number">0</view>
+          <view class="property-item-text">套餐卡</view>
+        </view>
+        <view class="property-item">
+          <view class="property-item-number">0</view>
+          <view class="property-item-text">健康值</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="service-area">
+    <view class="service-item">
+      <image class="service-item-image" src="/images/user.png" />
+      <view class="service-item-text">我的拼圖</view>
+    </view>
+    <view class="service-item">
+      <image class="service-item-image" src="/images/calendar.png" />
+      <view class="service-item-text">我的週期</view>
+    </view>
+    <view class="service-item">
+      <image class="service-item-image" src="/images/clock.png" />
+      <view class="service-item-text">我的預約</view>
+    </view>
+    <view class="service-item">
+      <image class="service-item-image" src="/images/health.png" />
+      <view class="service-item-text">家醫服務</view>
+    </view>
+  </view>
+</view>
