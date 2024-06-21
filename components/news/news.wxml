@@ -1,0 +1,10 @@
+<view class="project-list">
+      <view class="projdect-title">最新消息</view>
+      <swiper indicator-dots="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-type="expand">
+        <block wx:for="{{imgUrl}}" wx:key="*this">
+          <swiper-item>
+            <image mode="cover" style="width: 100%;height: 100%;" src="{{item}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>

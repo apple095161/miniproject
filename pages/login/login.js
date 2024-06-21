@@ -1,8 +1,15 @@
 // login.js
+import {
+  createStoreBindings
+} from "mobx-miniprogram-bindings"
+import {
+  store
+} from "../../store/store"
 Page({
   data: {
     title: '會員登入',
     username: '',
+    password: '',
     type: 'login'
   },
   onLoad() {
@@ -25,5 +32,23 @@ Page({
     wx.navigateTo({
       url: '/pages/detail/detail',
     })
+  },
+  submit() {
+    this.storeBindings = createStoreBindings(this, {
+      store, // 需要绑定的数据仓库
+      fields: ['userInfo'], // 将 this.data.list 绑定为仓库中的 list ，即天气数据
+      actions: ['setUserInfo'], // 将 this.setList 绑定为仓库中的 setList action
+    })
+    this.setUserInfo({
+      userName: this.data.username,
+      userPassword: this.data.password
+    })
+
+    setTimeout(() => {
+      console.log(this.data.userInfo)
+      wx.navigateBack({
+        delta: -1
+      });
+    }, 200);
   }
 })

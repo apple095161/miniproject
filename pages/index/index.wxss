@@ -120,6 +120,7 @@ page {
   max-width: 400px;
   height: 70%;
   background-color: white;
+
 }
 
 .content {
@@ -138,4 +139,22 @@ page {
   top: -30px;
   width: 40px;
   height: 40px;
+}
+.content-title{
+  text-align: center;
+  padding: 10px 0px;
+}
+.content-description{
+  letter-spacing: 2px;
+}
+
+@keyframes popup {
+  0% {transform: scale(0);}
+  20% {transform: scale(1.1);}
+  50% {transform: scale(0.95);}
+  80% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+.popupShow{
+  animation: popup 0.5s;
 }

@@ -1,0 +1,15 @@
+<navigation-bar title="設定" back="{{false}}" homeButton="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="setting-list">
+  <view class="setting-item" wx:for="{{settingList}}">
+    <view class="setting-item-text">
+      <view>{{item.title}}</view>
+      <view class="setting-sub-description" wx:if="{{item.title==='個人通知'}}">{{
+        item.value ? 'on' : 'off'
+      }}</view>
+      <view class="setting-sub-description" wx:else>{{
+        item.value
+      }}</view>
+    </view>
+    <image src="/images/right-arrow.png" class="setting-item-image" mode="" />
+  </view>
+</view>

@@ -1,0 +1,25 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apple095161/miniproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apple095161/miniproject/issues"
+  },
+  "homepage": "https://github.com/apple095161/miniproject#readme",
+  "dependencies": {
+    "mobx-miniprogram": "^6.12.3",
+    "mobx-miniprogram-bindings": "^3.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

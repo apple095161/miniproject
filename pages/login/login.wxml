@@ -14,7 +14,7 @@
       <label for="" class="form-label">Password</label>
       <View class="form-input-wrap">
         <image class="form-image" src="/images/1.png" />
-        <input type="text" model:value="{{username}}" placeholder="Password" class="form-input" />
+        <input type="text" model:value="{{password}}" placeholder="Password" class="form-input" />
       </View>
     </View>
     <View class="action">
@@ -24,7 +24,7 @@
         <View class="changeType" bind:tap="changeType">去註冊</View>
       </View>
     </View>
-    <button style="width: 100%;" class="login-button">登入</button>
+    <button style="width: 100%;" class="login-button" bind:tap="submit">登入</button>
   </View>
 </View>
 
@@ -40,7 +40,7 @@
     <View class="form-group">
       <label for="" class="form-label">電子郵件</label>
       <View class="form-input-wrap">
-        <input type="email" model:value="{{username}}" placeholder="請輸入電子郵件" class="form-input2" />
+        <input type="email" model:value="{{password}}" placeholder="請輸入電子郵件" class="form-input2" />
       </View>
     </View>
     <View class="form-group">

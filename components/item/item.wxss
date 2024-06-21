@@ -22,3 +22,6 @@
   width: 100%;
   max-width: 100%;
 }
+.product-items-text{
+  text-align: center;
+}
